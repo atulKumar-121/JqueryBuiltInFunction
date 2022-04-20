@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h2>Jquery Built in functions</h2>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+<script>
+console.log("Number Built in method");
+var num=25.456788;
+console.log("To Fixed",num.toFixed(2));
+var numstr=num.toString();
+console.log("numstr tye",typeof numstr);
+var str="Life is not awesome at all";
+console.log("String Built in method");
+console.log("UpperCase ",str.toUpperCase());
+console.log("LowerCase ",str.toLowerCase());
+console.log("Character at index 2",str.charAt(2));
+console.log("Concatanation String : ",str.concat(" Just Keep On smiling"));
+console.log("Split a string : ",str.slice(2,4));
+console.log("Substring of the String ",str.substr(2,6));
+var arr=[1,2,3,4,5,6,7,8];
+arr.forEach(newFunction);
+function newFunction(item)
+{
+console.log(item);
+}
+var arr1=arr.filter(filterFunction);
+console.log("After Filter ",arr1);
+function filterFunction(item)
+{
+  return item%2==0;
+}
+console.log("Reverse", arr.reverse());
+console.log("Sort", arr.sort());
+
+
+
+</script>
+</body>
+</html>
